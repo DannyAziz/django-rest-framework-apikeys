@@ -2,9 +2,6 @@
 drf_apikeys
 =====
 
-Polls is a simple Django app to conduct Web-based polls. For each
-question, visitors can choose between a fixed number of answers.
-
 drf-apikeys allows you to Authenticate your REST api with api keys on a per user basis.
 
 Quick start
