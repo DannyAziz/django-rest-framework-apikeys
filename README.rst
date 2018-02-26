@@ -1,8 +1,8 @@
 =====
-drf_apikeys
+django-rest-framework-apikeys
 =====
 
-drf-apikeys allows you to Authenticate your REST api with api keys on a per user basis.
+django-rest-framework-apikeys allows you to Authenticate your REST api with api keys on a per user basis.
 
 Quick start
 -----------
@@ -11,15 +11,15 @@ Quick start
 
     INSTALLED_APPS = [
         ...
-        'drf_apikeys',
+        'django-rest-framework-apikeys',
     ]
 
-2. Add the authenticated class::
+2. Add the authentication class::
 
     REST_FRAMEWORK = {
         'DEFAULT_AUTHENTICATION_CLASSES': (
             ...
-            'drf_apikeys.authentication.APIKeyAuthentication',
+            'django-rest-framework-apikeys.authentication.APIKeyAuthentication',
         )
     }
 
@@ -29,10 +29,17 @@ Quick start
 
     urlpatterns = [
         ...
-        url(r'^apikeys/', include("drf_apikeys.urls")),
+        url(r'^apikeys/', include("django-rest-framework-apikeys.urls")),
     ]
 
 
-5. go to /apikeys/create/ and create Api key for user
+5. Send a POST request to /apikeys/create/ to create API Key for user or create via admin
 
-6. Add 'x-api-key' to header to Authenticate via api key.
+6. Add 'x-api-key' to header to Authenticate via api key::
+
+    response = requests.get(
+        url="http://0.0.0.0:8000/endpoint,
+        headers={
+            "x-api-key": "fd8b4a98c8f53035aeab410258430e2d86079c93",
+        },
+    )

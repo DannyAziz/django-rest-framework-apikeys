@@ -5,4 +5,4 @@ from django.apps import AppConfig
 
 
 class ApikeysConfig(AppConfig):
-    name = 'drf_apikeys'
+    name = 'django-rest-framework-apikeys'
