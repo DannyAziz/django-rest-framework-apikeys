@@ -15,9 +15,9 @@ setup(
     license='MIT License',
     description='django-rest-framework-apikeys allows you to Authenticate your REST api with api keys on a per user basis.',
     long_description=README,
-    url='https://www.example.com/',
+    url='https://github.com/DannyAziz/django-rest-framework-apikeys',
+    download_url='https://github.com/DannyAziz/django-rest-framework-apikeys/archive/0.1.tar.gz',
     author='DannyAziz',
-    author_email='yourname@example.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
