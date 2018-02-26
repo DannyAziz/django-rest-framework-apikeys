@@ -8,7 +8,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('django-rest-framework-apikeys', '0001_initial'),
+        ('django_rest_framework_apikeys', '0001_initial'),
     ]
 
     operations = [

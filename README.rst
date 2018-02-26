@@ -13,11 +13,11 @@ Install
 Quick start
 -----------
 
-1. Add "drf_apikeys" to your INSTALLED_APPS settings like this::
+1. Add "django-rest-framework-apikeys" to your INSTALLED_APPS settings like this::
 
     INSTALLED_APPS = [
         ...
-        'django-rest-framework-apikeys',
+        'django_rest_framework_apikeys',
     ]
 
 2. Add the authentication class::
@@ -25,7 +25,7 @@ Quick start
     REST_FRAMEWORK = {
         'DEFAULT_AUTHENTICATION_CLASSES': (
             ...
-            'django-rest-framework-apikeys.authentication.APIKeyAuthentication',
+            'django_rest_framework_apikeys.authentication.APIKeyAuthentication',
         )
     }
 
@@ -35,7 +35,7 @@ Quick start
 
     urlpatterns = [
         ...
-        url(r'^apikeys/', include("django-rest-framework-apikeys.urls")),
+        url(r'^apikeys/', include("django_rest_framework_apikeys.urls")),
     ]
 
 
